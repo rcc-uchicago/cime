@@ -77,7 +77,6 @@ contains
 !-----------------------------------------------------------------------------
 
   elemental logical function shr_const_isspval(rval)
-!$omp declare simd(shr_const_isspval)
 
      real(r8), intent(in) :: rval
 
