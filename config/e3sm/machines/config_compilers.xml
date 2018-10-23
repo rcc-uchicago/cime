@@ -707,6 +707,11 @@ for mct, etc.
   <SLIBS>
     <append>$SHELL{$ENV{NETCDF_PATH}/bin/nf-config --flibs} -lblas -llapack</append>
   </SLIBS>
+  <CPPDEFS>
+    <append MODEL="ice"> -DUSE_PIO2 </append>
+    <append MODEL="ocn"> -DUSE_PIO2 </append>
+    <append MODEL="glc"> -DUSE_PIO2 </append>
+  </CPPDEFS>
 </compiler>
 
 <compiler MACH="anvil" COMPILER="gnu">
