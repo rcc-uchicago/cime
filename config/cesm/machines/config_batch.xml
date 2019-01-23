@@ -251,6 +251,17 @@
     </queues>
   </batch_system>
 
+  <batch_system MACH="midway2" type="slurm">
+    <batch_submit>sbatch</batch_submit>
+    <directives>
+      <directive>--partition=broadwl</directive>
+      <directive>--ntasks-per-node={{ tasks_per_node }}</directive>
+    </directives>
+    <queues>
+      <queue walltimemin="00:00:00" walltimemax="36:00:00" nodemin="1" nodemax="100" default="true">broadwl</queue>
+    </queues>
+  </batch_system>
+
   <batch_system MACH="daint" type="slurm" >
     <batch_submit>sbatch</batch_submit>
     <submit_args>
