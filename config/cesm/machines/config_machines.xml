@@ -474,6 +474,7 @@ This allows using a different mpirun command to launch unit tests
       <modules compiler="intel">
 	<command name="load">intel/16.0</command>
 	<command name="load">netcdf/4.4.1.1+intelmpi-5.1+intel-16.0</command>
+	<command name="load">pnetcdf/1.11.0</command>
 	<command name="load">mkl/2017.up4</command>
       </modules>
       <modules mpilib="intelmpi">
@@ -486,6 +487,7 @@ This allows using a different mpirun command to launch unit tests
     <environment_variables compiler="intel">
       <env name="NETCDF_HOME">$ENV{NETCDF_DIR}</env>
       <env name="NETCDF_PATH">$ENV{NETCDF_DIR}</env>
+      <env name="PNETCDFROOT">$ENV{PNETCDF_DIR}</env>
     </environment_variables>
   </machine>
 
