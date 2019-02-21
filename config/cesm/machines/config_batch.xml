@@ -258,7 +258,7 @@
       <directive>--ntasks-per-node={{ tasks_per_node }}</directive>
     </directives>
     <queues>
-      <queue walltimemin="00:00:00" walltimemax="36:00:00" nodemin="1" nodemax="1" default="true">broadwl</queue>
+      <queue walltimemin="00:00:00" strict="true" walltimemax="36:00:00" nodemin="1" nodemax="1" default="true">build</queue>
     </queues>
   </batch_system>
 
